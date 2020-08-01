@@ -8,7 +8,7 @@ except IndexError:
 
 # Value Error Example with Else Block
 try:
-    file = open("app.py")
+    file = open("../app.py")
     age = int(input("Age: "))
     xfactor = 10 / age
 except (ValueError, ZeroDivisionError) as error:
@@ -22,7 +22,7 @@ finally:
 
 # Method 2 For File Opening
 try:
-    with open("app.py") as file, open('dictionary.py') as target:
+    with open("../app.py") as file, open('dictionary.py') as target:
         print("File Opened")
 
     age = int(input("Age: "))
